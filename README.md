@@ -117,6 +117,16 @@ Full options for creation of PrintJobs are available in the [API documentation](
   client.fetchScalesForComputerByDeviceName(computer_id, device_name).then(...);
 ```
 
+### [Child accounts](https://www.printnode.com/en/docs/api/curl#account-management)
+
+```
+  // Create a child account to your main account
+  client.createChildAccount(account).then(...);
+
+  // Retrieves a client key for delegated authentication
+  client.fetchClientKey(uuid, edition, version).then(...);
+```
+**Creating** full options of creating a child account are available in the [API documentation](https://www.printnode.com/en/docs/api/curl#account-creation).
 ## Testing
 
 The tests in place at the moment are simply testing for positive responses, they are not looking at the detail of the response.
