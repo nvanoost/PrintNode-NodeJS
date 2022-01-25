@@ -1,7 +1,4 @@
-# PrintNode-NodeJS
-
-Cloud Printing wrapper for the [PrintNode](https://www.printnode.com) API.
-
+# PrintNodeJS
 Forked from https://github.com/miketownsend/PrintNode-NodeJS but added some more functions like integrator account support and fetchComputer function. Since the base is still from Mike Townsend, I will let his name as author for this package.
 
 ## Installation
@@ -136,7 +133,7 @@ Full options for creation of PrintJobs are available in the [API documentation](
   // Retrieves a client key for delegated authentication
   client.fetchClientKey(uuid, edition, version).then(...);
 ```
-**Creating** full options of creating a child account are available in the [API documentation](https://www.printnode.com/en/docs/api/curl#account-creation).
+Creating full options of creating a child account are available in the [API documentation](https://www.printnode.com/en/docs/api/curl#account-creation).
 ## Testing
 
 The tests in place at the moment are simply testing for positive responses, they are not looking at the detail of the response.
