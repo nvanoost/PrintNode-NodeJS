@@ -2,6 +2,8 @@
 
 Cloud Printing wrapper for the [PrintNode](https://www.printnode.com) API.
 
+Forked from https://github.com/miketownsend/PrintNode-NodeJS but added some more functions like integrator account support and fetchComputer function. Since the base is still from Mike Townsend, I will let his name as author for this package.
+
 ## Installation
 
 Install nodejs + npm.
