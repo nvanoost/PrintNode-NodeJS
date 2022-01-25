@@ -5,11 +5,12 @@ Cloud Printing wrapper for the [PrintNode](https://www.printnode.com) API.
 Forked from https://github.com/miketownsend/PrintNode-NodeJS but added some more functions like integrator account support and fetchComputer function. Since the base is still from Mike Townsend, I will let his name as author for this package.
 
 ## Installation
+You can install this package by using npm to install it directly from github:
+```
+    npm install git+https://github.com/nvanoost/PrintNodeJS --save
+```
 
-Install nodejs + npm.
-
-Clone repo and install dependencies:
-
+Or clone this repo
 ```
   // clone repo
   git clone https://github.com/miketownsend/PrintNode-NodeJS.git 
@@ -22,9 +23,16 @@ Clone repo and install dependencies:
 
 Require and instantiate a client:
 
+If you directly installed the package using NPM:
+```  
+  const PrintNodeClient = require('PrintNodeJS');
+  const client = new PrintNodeClient({ api_key: "DUMMY_API_KEY", default_printer_id: 123456 });
 ```
-  var PrintNodeClient = require('~/path/to/printnode-client/index.js');
-  var client = new PrintNodeClient({ api_key: "DUMMY_API_KEY", default_printer_id: 123456 });
+
+If you cloned the repo:
+```
+    const PrintNodeClient = require('~/path/to/PrintNodeJS/index.js');
+    const client = new PrintNodeClient({ api_key: "DUMMY_API_KEY", default_printer_id: 123456 });
 ```
 
 ### [Account Information](https://www.printnode.com/docs/api/curl/#account_information)
